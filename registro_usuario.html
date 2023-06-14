@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- title of site -->
+    <title>Group Zero - Cooperativa de Arte</title>
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/logo.JPG" />
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!--linear icon css-->
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!--login.bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="assets/js/jquery.js"></script>
+    <!--modernizr.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!--bootstrap.min.js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- bootsnav js -->
+    <script src="assets/js/bootsnav.js"></script>
+    <!--owl.carousel.js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!--Custom JS-->
+    <script src="assets/js/custom.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Fonts Login -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <!-- Script para la validación del RUT -->
+    <script>
+        function validarFormulario() {
+            var rutInput = document.getElementById('rut');
+            var rut = rutInput.value;
+            var rutValido = validarRut(rut);
+
+            if (!rutValido) {
+                alert('Por favor, ingrese un RUT válido (ejemplo: 12.345.678-K).');
+                rutInput.focus();
+                return false;
+            }
+
+            var passwordInput = document.getElementById('password');
+            var password = passwordInput.value;
+            var passwordValida = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/.test(password);
+
+            if (!passwordValida) {
+                alert('La contraseña debe tener al menos 8 caracteres, una letra mayúscula, un número y un carácter especial.');
+                passwordInput.focus();
+                return false;
+            }
+
+            var emailInput = document.getElementById('email');
+            var email = emailInput.value;
+            var emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+            if (!emailValido) {
+                alert('El correo electrónico ingresado no es válido.');
+                emailInput.focus();
+                return false;
+            }
+
+            alert('Usuario registrado con éxito!');
+            return true;
+        }
+
+        function validarRut(rut) {
+            var rutRegex = /^[0-9]{1,2}\.[0-9]{3}\.[0-9]{3}-[0-9Kk]$/;
+            return rutRegex.test(rut);
+        }
+    </script>
+</head>
+
+<body>
+    <header id="home" class="welcome-hero"></header>
+
+    <!-- Inicio del área superior-->
+    <div class="top-area">
+        <div class="header-area">
+            <!-- Iniciar navegación -->
+            <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+                <!-- Iniciar opcion busqueda  -->
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Buscar en Group Zero" oninput="search()">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <ul id="searchResults"></ul>
+
+                <!-- Fin opcion busqueda -->
+
+                <div class="container">
+                    <!-- Iniciar navegación de atributos -->
+                    <div class="attr-nav">
+                    </div><!--/.attr-nav-->
+                    <!-- End Atribute Navigation -->
+
+                    <!-- Comienzo opcion Navegancion de cabecera-->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html"> <img script src="assets/logo/logo2d.png"></a>
+
+                    </div><!--/.navbar-header-->
+                    <!-- Comienzo opcion Navegancion de cabecera -->
+
+                    <!-- MENU PRINCIPAL -->
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class=" scroll active"><a onclick="window.location.href='index.html'">Inicio</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorías</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="escultura_subcategoria.html">Escultura</a></li>
+                                    <li><a href="pintura_subcategoria.html">Pinturas</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll"><a href="#" onclick="window.location.href='novedades.html'; return false;">Novedades </a></li>
+                            
+
+                        </ul><!--/.nav -->
+                    </div><!-- /.navbar-collapse -->
+                </div><!--/.container-->
+            </nav><!--/nav-->
+            <!-- End Navigation -->
+        </div><!--/.header-area-->
+        <div class="clearfix"></div>
+
+    </div><!-- /.top-area-->
+    <!-- top-area End -->
+
+    <div class="card-body">
+        <main class="login-form" id="login-form">
+            <div class="cotainer">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">Registro de usuario</div>
+                            <form action="" method="post" onsubmit="return validarFormulario()">
+                                <div class="form-group row">
+                                    <label for="nombre" class="col-md-4 col-form-label text-md-right">
+                                        Nombre:
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="nombre" class="form-control" name="nombre" required autofocus>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="apellido" class="col-md-4 col-form-label text-md-right">
+                                        Apellido:
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="apellido" class="form-control" name="apellido" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="rut" class="col-md-4 col-form-label text-md-right">
+                                        Rut:
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="rut" class="form-control" name="rut" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="telefono" class="col-md-4 col-form-label text-md-right">
+                                        Teléfono:
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="telefono" class="form-control" name="telefono" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-4 col-form-label text-md-right">
+                                        Correo:
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="email" id="email" class="form-control" name="email" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right">
+                                        Contraseña:
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="password" id="password" class="form-control" name="password" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="user_type" class="col-md-4 col-form-label text-md-right">
+                                        Tipo de usuario:
+                                    </label>
+                                    <div class="col-md-6">
+                                        <select id="user_type" class="form-control" name="user-type" required>
+                                            <option value="artista">Artista</option>
+                                            <option value="comprador">Comprador</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="button">Registrarse</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
