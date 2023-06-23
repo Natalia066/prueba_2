@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="es"> <!--idioma-->
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--font--->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        <!-- Titulo-->
+        <title>Group Zero - Cooperativa de Arte</title>
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/logo.JPG">
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <!--linear icon css-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+    </head>
+	
+	<body>
+            <!-- Inicio del área superior-->
+    <div class="top-area">
+        <div class="header-area">
+            <!-- Iniciar navegación -->
+            <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+                <!-- Iniciar opcion busqueda  -->
+                <div class="top-search">
+                    <div class="container">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Buscar en Group Zero" oninput="search()">
+                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                    </div>
+                    </div>
+                </div>
+                <ul id="searchResults"></ul>
+                
+                <!-- Fin opcion busqueda -->
+
+                <div class="container">            
+                    <!-- Iniciar navegación de atributos -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="search">
+                                <a href="#"><span class="lnr lnr-magnifier"></span></a>
+                            </li><!--/.fin clase search-->
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+                                    <span class="lnr lnr-cart"></span>
+                                    <span class="badge badge-bg-1">2</span>
+                                </a>
+                                <ul class="dropdown-menu cart-list s-cate">
+                                    <li class="single-cart-list">
+                                        <a href="#" class="photo"><img src="assets/images/collection/cart1.png" class="cart-thumb" alt="image" /></a>
+                                        <div class="cart-list-txt">
+                                            <h6><a href="#">Bicleta Metal</a></h6>
+                                            <p>1 x - <span class="price">$380.000</span></p>
+                                        </div><!--/.cart-list-txt-->
+                                        <div class="cart-close">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div><!--/.cart-close-->
+                                    </li><!--/.single-cart-list -->
+                                    <li class="single-cart-list">
+                                        <a href="#" class="photo"><img src="assets/images/collection/cart2.jpg" class="cart-thumb" alt="image" /></a>
+                                        <div class="cart-list-txt">
+                                            <h6><a href="#">Todo lo que robé en una hora </a></h6>
+                                            <p>1 x - <span class="price">$150.000</span></p>
+                                        </div><!--/.cart-list-txt-->
+                                        <div class="cart-close">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div><!--/.cart-close-->
+                                    </li><!--/.single-cart-list -->
+                                    <li class="single-cart-list">
+                                        <a href="#" class="photo"><img src="assets/images/collection/cart3.jpg" class="cart-thumb" alt="image" /></a>
+                                        <div class="cart-list-txt">
+                                            <h6><a href="#">Translúcida </a></h6>
+                                            <p>1 x - <span class="price">$400.000</span></p>
+                                        </div><!--/.cart-list-txt-->
+                                        <div class="cart-close">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div><!--/.cart-close-->
+                                    </li><!--/.single-cart-list -->
+                                    <li class="total">
+                                        <span>Total: $930.000</span>
+                                        <button class="btn-cart pull-right" onclick="window.location.href='#'">view cart</button>
+                                    </li>
+                                </ul>
+                            </li><!--/.dropdown-->
+                        </ul>
+                    </div><!--/.attr-nav-->
+                    <!-- End Atribute Navigation -->
+
+                    <!-- Logo Inicio -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html"> <img script src="assets/logo/logo2d.png"></a>
+
+                    </div><!--/.navbar-header-->
+                    <!-- Logo Inicio -->
+
+                    <!-- MENU PRINCIPAL -->
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class=" scroll active"><a href="#home">Inicio</a></li>
+                            <li class="scroll"><a href="#category-products">Categorias</a></li>
+                            <li class="scroll"><a href="#new-arrivals">Novedades</a></li>
+                            <li class="scroll"><a href="#blog">Noticias</a></li>
+                            <li class="scroll"><a href="#newsletter">Contacto </a></li>
+                            <li class="scroll"><a onclick="window.location.href='login.html'"> Login </a></li>
+                            
+                        </ul><!--/.nav -->
+                    </div><!-- /.navbar-collapse -->
+                </div><!--/.container-->
+            </nav><!--/nav-->
+            <!-- End Navigation -->
+        </div><!--/.header-area-->
+        <div class="clearfix"></div>
+
+    </div><!-- /.top-area-->
+    <!-- top-area End -->
+    </body>
+</html>

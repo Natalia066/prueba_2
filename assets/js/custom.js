@@ -4,8 +4,8 @@ $(document).ready(function(){
 
 /*=========== MENU ===========
 1. Scroll To Top 
-2. owl carousel
-3. welcome animation support
+2. Carrusel Own
+3. Animacion de Inicio Pagina
 4. Carrito de compras
 ======================================*/
 
