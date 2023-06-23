@@ -1,0 +1,101 @@
+Entrega N°3: Grupo Zero
+
+La página de venta de arte "Grupo Zero" es un proyecto que tiene como objetivo ofrecer una plataforma en línea para la venta de pinturas y esculturas de artistas nacionales e internacionales. Nuestro propósito es proporcionar a los amantes del arte una experiencia única y accesible, donde puedan descubrir y adquirir obras de calidad.
+
+El alcance del producto abarca desde la creación de una interfaz atractiva y funcional hasta la implementación de características que faciliten la búsqueda, selección y compra de obras de arte. Se pretende construir una plataforma integral que satisfaga las necesidades de los usuarios, tanto compradores como vendedores de arte.
+
+El valor del producto radica en la posibilidad de brindar a los usuarios una amplia selección de obras de arte de diversos estilos, artistas reconocidos y emergentes. A través de la página "Grupo Zero", los usuarios podrán explorar el catálogo de manera intuitiva, encontrar información detallada sobre las obras y realizar compras seguras y confiables.
+
+El público objetivo de "Grupo Zero" está compuesto por aficionados al arte, coleccionistas, interioristas y personas interesadas en adquirir piezas únicas y exclusivas. La plataforma busca cautivar a este público ofreciendo una experiencia de navegación agradable, una interfaz amigable y una amplia variedad de obras de arte de calidad.
+
+El uso previsto de la página "Grupo Zero" consiste en permitir a los usuarios explorar el catálogo de obras de arte, realizar búsquedas personalizadas, agregar obras al carrito de compra y finalizar transacciones seguras utilizando diferentes métodos de pago. Además, los vendedores podrán gestionar sus obras, actualizar información y recibir notificaciones sobre las ventas realizadas.
+
+En este documento se incluyen definiciones y acrónimos pertinentes para garantizar una comprensión clara y uniforme entre los participantes. Además, se proporciona un índice detallado para facilitar la búsqueda y navegación dentro de la especificación de requisitos de software.
+
+Con esta introducción, se establece el panorama global del proyecto y se sientan las bases para el desarrollo de la especificación de requisitos de software de la página de venta de arte "Grupo Zero".
+
+
+Definir funciones necesarias para el correcto funcionamiento de la aplicación.
+
+Para el correcto funcionamiento de la aplicación de la página de venta de arte "Grupo Zero", se requieren diversas funciones. Estas funciones desempeñan un papel crucial en la implementación de las características y la entrega de una experiencia fluida para los usuarios. A continuación, se presentan algunas funciones necesarias:
+
+•	Registro de usuarios: Función para permitir a los usuarios registrarse en la plataforma proporcionando información personal, como nombre, dirección de correo electrónico y contraseña.
+•	Inicio de sesión: Función para permitir a los usuarios iniciar sesión en sus cuentas utilizando sus credenciales registradas.
+•	Gestión de perfiles de usuario: Función para que los usuarios puedan ver y editar su información personal, incluyendo detalles de contacto, preferencias y opciones de notificación.
+•	Catálogo de arte: Función para mostrar una lista de obras de arte disponibles en el catálogo, con detalles como imágenes, descripciones, artistas, estilos, precios y dimensiones.
+•	Búsqueda y filtrado: Función que permite a los usuarios buscar obras de arte específicas en el catálogo utilizando criterios como el nombre del artista, el estilo, el precio, etc.
+•	Carrito de compra: Función para permitir a los usuarios agregar obras de arte seleccionadas a su carrito de compra y gestionar los elementos en él antes de la compra.
+•	Proceso de compra: Función que guía a los usuarios a través del proceso de compra, incluyendo la selección de obras de arte, la revisión del pedido, la selección del método de envío y el pago seguro.
+•	Gestión de pedidos: Función para que los usuarios puedan ver el estado de sus pedidos, incluyendo detalles de envío y fechas estimadas de entrega.
+•	Integración de pasarelas de pago: Función para permitir a los usuarios realizar pagos seguros utilizando diferentes métodos de pago, como tarjetas de crédito, transferencias bancarias o billeteras digitales.
+•	Administración de usuarios y roles: Función que permite a los administradores del sistema gestionar los perfiles de usuario, asignar roles y permisos, y realizar acciones de moderación si es necesario.
+•	Gestión de inventario: Función para que los administradores puedan agregar nuevas obras de arte al catálogo, actualizar información de existencias y eliminar obras vendidas.
+•	Notificaciones y mensajes: Función para enviar notificaciones a los usuarios sobre el estado de sus pedidos, promociones especiales, nuevas adiciones al catálogo, entre otros.
+•	Panel de administración: Función que proporciona a los administradores una interfaz para gestionar y supervisar aspectos clave del sistema, como pedidos, usuarios, inventario y análisis de ventas.
+Estas funciones son fundamentales para el correcto funcionamiento de la aplicación de venta de arte "Grupo Zero". Al implementar estas características, se brinda a los usuarios una experiencia completa y satisfactoria al interactuar con la plataforma.
+
+
+
+
+Matriz de seguimiento
+
+Tarea/Responsabilidad	Descripción	Encargado	Estado actual	Fecha límite
+Diseño del sitio web	Creación de una interfaz atractiva y funcional	Equipo de diseño	En progreso	30/06/2023
+Desarrollo del backend	Creación de la lógica y funcionalidades del sitio web	Equipo de desarrollo backend	En progreso	15/07/2023
+Desarrollo del frontend	Implementación de la interfaz de usuario y diseño web	Equipo de desarrollo frontend	Pendiente	30/06/2023
+Integración de base de datos	Conexión y gestión de la base de datos de productos	Equipo de desarrollo backend	Pendiente	30/06/2023
+Implementación de pagos	Configuración de pasarelas de pago seguras y confiables	Equipo de desarrollo backend	Pendiente	15/07/2023
+Optimización del rendimiento	Mejora del rendimiento y la velocidad del sitio web	Equipo de desarrollo backend	Pendiente	30/07/2023
+Pruebas y depuración	Identificación y corrección de errores y fallos	Equipo de QA	Pendiente	15/08/2023
+Implementación de seguridad	Configuración de medidas de seguridad y protección	Equipo de desarrollo backend	Pendiente	15/08/2023
+Lanzamiento y despliegue	Puesta en marcha del sitio web en el servidor de producción	Equipo de TI	Pendiente	31/08/2023
+
+ERS
+
+A continuación, se presenta una posible especificación de requisitos de software para el proyecto de la página de venta de arte "Grupo Zero":
+
+Requisitos funcionales:
+
+1.1.	Registro de usuarios: 
+•	Los usuarios deben poder registrarse en la página proporcionando la información necesaria, como nombre, dirección de correo electrónico y contraseña.
+•	Debe haber validaciones de datos para garantizar la integridad de la información ingresada.
+1.2.	Inicio de sesión: 
+•	Los usuarios registrados deben poder iniciar sesión en la página utilizando su dirección de correo electrónico y contraseña.
+•	Se deben implementar medidas de seguridad, como el cifrado de contraseñas, para proteger la información de los usuarios.
+1.3.	Búsqueda y filtrado de obras de arte: 
+•	Los usuarios deben poder buscar y filtrar obras de arte por categorías (pinturas, esculturas, artistas, etc.), precios, estilos, tamaños, etc.
+•	El sistema debe proporcionar resultados precisos y relevantes según los criterios de búsqueda especificados.
+1.4.	Detalles de la obra de arte: 
+•	Los usuarios deben poder ver detalles completos de una obra de arte, incluyendo imágenes, descripción, medidas, artista, precio, etc.
+1.5.	Carrito de compras: 
+•	Los usuarios deben poder agregar obras de arte al carrito de compras y ver un resumen de los artículos seleccionados.
+•	Debe ser posible modificar la cantidad de artículos en el carrito y eliminar artículos seleccionados.
+1.6.	Proceso de compra: 
+•	Los usuarios deben poder completar el proceso de compra proporcionando la información de envío, método de pago y confirmación de la compra.
+•	Se deben implementar pasarelas de pago seguras para procesar las transacciones.
+1.7.	Gestión de pedidos: 
+•	El sistema debe permitir a los administradores y usuarios realizar un seguimiento de los pedidos realizados, incluyendo el estado del pedido y el historial de transacciones.
+
+Requisitos no funcionales:
+•	2.1. Seguridad: El sistema debe garantizar la seguridad de los datos de los usuarios, utilizando prácticas de cifrado y protección de datos.
+•	Se deben implementar medidas para proteger la integridad del sistema y prevenir accesos no autorizados.
+•	2.2. Rendimiento: El sistema debe ser rápido y eficiente, asegurando tiempos de carga rápidos de las páginas y respuestas ágiles a las interacciones del usuario.
+•	2.3. Usabilidad: La interfaz de usuario debe ser intuitiva y fácil de usar, permitiendo una navegación clara y accesible para los usuarios.
+•	Se deben proporcionar instrucciones claras para el proceso de compra y otras funcionalidades del sitio.
+•	2.4. Escalabilidad: El sistema debe ser escalable y capaz de manejar un crecimiento futuro en términos de usuarios, catálogo de arte y tráfico del sitio web.
+•	2.5. Compatibilidad: El sistema debe ser compatible con diferentes navegadores web populares y dispositivos, asegurando una experiencia consistente para los usuarios.
+
+Lista de Cotejo:
+
+Elemento	Cumplido
+Registro de usuarios implementado y funcional	[ ]
+Inicio de sesión seguro y confiable	[ ]
+Gestión de perfiles de usuario	[ ]
+Catálogo de arte visible para los usuarios, con detalles completos de las obras	[ ]
+Función de búsqueda y filtrado en el catálogo	[ ]
+Carrito de compra funcional	[ ]
+Proceso de compra completo y seguro	[ ]
+Gestión de pedidos para los usuarios	[ ]
+Integración de pasarelas de pago seguras	[ ]
+Administración de usuarios y roles	[ ]
+Panel de administración para los administradores	[ ]
